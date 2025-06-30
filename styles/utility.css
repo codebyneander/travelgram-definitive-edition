@@ -22,7 +22,6 @@
 .container {
   --max-width: 360px; /* Fator máximo permitido de largura (Mobile) */
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  border: solid violet;
   margin-inline: auto;
 }
 
@@ -41,3 +40,12 @@
   }
   
 }
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
