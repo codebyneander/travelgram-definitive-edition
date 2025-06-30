@@ -33,10 +33,12 @@
   --fw-base: 400;
 
   --px-lg: 1rem; /* Mobile */
+  --px-xl: 2rem;
 
   --py-base: 1rem; /* 16px */
   --py-lg: 1rem; /* 16px */
-  --py-xl: 2rem; /* 32px */
+  --py-2xl: 2rem; /* 32px */
+  --py-xl: 1.5rem;
 }
 
 html {
@@ -51,6 +53,10 @@ body {
   background-color: var(--bg-color);
 }
 
+.surface-color {
+  background-color: var(--surface-color);
+}
+
 h1 {
   line-height: 1.25;
   color: var(--text-color-primary);
@@ -58,13 +64,14 @@ h1 {
   font-size: var(--fs-h1);
 }
 
-ul[type="list"] {
+ul[role="list"] {
   list-style: none;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+  font-size: var(--fs-base);
 }
 
 a:hover {

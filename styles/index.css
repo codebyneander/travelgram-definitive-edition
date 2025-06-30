@@ -1,3 +1,6 @@
 @import url(global.css);
 @import url(utility.css);
 @import url(fields/header.css);
+@import url(fields/main.css);
+@import url(fields/section.css);
+@import url(fields/footer.css);

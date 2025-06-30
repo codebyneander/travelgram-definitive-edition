@@ -1,0 +1,50 @@
+/* Contêiner principal da galeria */
+.galeria-viagem {
+    display: flex; /* Ativa o layout flexbox */
+    flex-direction: column; /* Organiza os itens em uma coluna vertical */
+    align-items: center; /* Centraliza as imagens horizontalmente no contêiner */
+    gap: 16px; /* Cria um espaço de 16px entre cada imagem */
+    padding: var(--py-base) var(--px-lg); /* Adiciona um espaçamento interno para não colar nas bordas da tela */
+    width: 100%; /* Faz a seção ocupar toda a largura disponível */
+    box-sizing: border-box; /* Garante que o padding não afete a largura total */
+}
+
+/* Estilo para cada imagem dentro da galeria */
+.galeria-viagem img {
+    width: 100%; /* Faz a imagem ser responsiva, ocupando a largura do seu contêiner */
+    max-width: 328px; /* Define a largura máxima que a imagem pode ter */
+    height: auto; /* Mantém a proporção original da imagem ao redimensionar a largura */
+    display: block; /* Remove qualquer espaço extra que o navegador possa adicionar abaixo da imagem */
+    border-radius: 16px; /* Adiciona as bordas arredondadas, como visto na imagem de exemplo */
+    object-fit: cover; /* Garante que a imagem cubra toda a área designada sem distorcer */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade (opcional) */
+}
+
+@media (width >= 80em) {
+
+    /* Modifica o contêiner da galeria para o layout em grade */
+    .galeria-viagem {
+        /* 1. Mude o layout para Grid */
+        display: grid; 
+
+        /* 2. Crie 4 colunas de tamanho igual */
+        grid-template-columns: repeat(4, 1fr);
+
+        /* 3. Defina uma largura máxima para a grade não esticar demais em telas ultra-wide */
+        max-width: 1360px;
+
+        /* 4. Centraliza a grade na página */
+        margin: 0 auto;
+
+        padding: var(--px-xl) var(--px-xl);
+    }
+
+    /* Modifica as imagens para ficarem quadradas na grade */
+    .galeria-viagem img {
+        /* 1. Garante que a imagem tenha a proporção de 1:1 (quadrada) */
+        aspect-ratio: 1 / 1;
+
+        /* 2. Remove a largura máxima individual, pois o grid já controla o tamanho */
+        max-width: none;
+    }
+}
