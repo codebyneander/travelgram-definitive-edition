@@ -40,7 +40,7 @@ O projeto simula o perfil de um usuário viajante, com bio, foto de perfil e uma
 ## 👤 Autor
 
 - **Renan Guilherme**
-  - Instagram: [@renanguilherme.dev](https://instagram.com/renanguilherme.dev)
+  - Instagram: [@renanguilherme.dev](https://instagram.com/renan.guilhermec)
   - LinkedIn: [Renan Guilherme](https://linkedin.com/in/renan-guilherme)
 
 ## 🙌 Agradecimentos
